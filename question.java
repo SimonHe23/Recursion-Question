@@ -1,4 +1,4 @@
-package gettingstarted;
+package gettingstarted;//newer version uploaded 3:08pm and this file would work with phidgets
 
 //Add Phidgets Library | You added a file called phidget22 when configuring your project. Import gives you access to the Phidgets library code inside that file. 
 import com.phidget22.*;
