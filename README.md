@@ -1,1 +1,1 @@
-This is a project connecting Phidget and Doodle pad. 
+This is a project connecting Phidget and Doodle pad. In this project there is 4 question related with recursion, the question will displayed on the doodlepad and the user should use buttom on Phidget to answer. The correct or incorrect return would displey on the LED in Phidgets. Partner: Simon & Mr. Twyford.
