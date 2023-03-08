@@ -1,3 +1,4 @@
+//work by Simon, the program may not working right now because currently creating new method.
 package gettingstarted;
 
 //Add Phidgets Library | You added a file called phidget22 when configuring your project. Import gives you access to the Phidgets library code inside that file. 
