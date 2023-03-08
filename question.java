@@ -1,4 +1,3 @@
-//work by Simon, the program may not working right now because currently creating new method.
 package gettingstarted;
 
 //Add Phidgets Library | You added a file called phidget22 when configuring your project. Import gives you access to the Phidgets library code inside that file. 
@@ -7,7 +6,7 @@ import com.phidget22.*;
 public class question {
     //Handle Exceptions | Exceptions will happen in your code from time to time. These are caused by unexpected things happening. Make sure you’ve added "throws Exception" to your main method.
     public static void main(String[] args) throws Exception{
-		/*
+		
         //Create | Create objects for your buttons and LEDs.
         DigitalInput redButton = new DigitalInput();
         DigitalOutput redLED = new DigitalOutput();
@@ -44,19 +43,26 @@ public class question {
 		redLED.setState(false);
 		greenLED.setState(false);*/
 		
-		//boolean answer = true;
 		
-		/*while(true){
-
+		System.out.println("Every recursive method could have at least one base case which halts the recursion, the base case is to use to stop the recursion. (T/F)");
+		while(true){
+			boolean answer = true;
+			
             if(answer==true){
 				if(greenButton.getState()==true){
 					greenLED.setState(true);
 					System.out.println("Correct Answer!");
 					Thread.sleep(150);
+					greenLED.setState(false);
+					redLED.setState(false);
+					break;
 				}else if(redButton.getState()==true){
 					redLED.setState(true);
 					System.out.println("Incorrect Answer!");
 					Thread.sleep(150);
+					greenLED.setState(false);
+					redLED.setState(false);
+					break;
 				}
 			}
 			if(answer==false){
@@ -64,20 +70,141 @@ public class question {
 					redLED.setState(true);
 					System.out.println("Incorrect Answer!");
 					Thread.sleep(150);
+					greenLED.setState(false);
+					redLED.setState(false);
+					break;
 				}else if(redButton.getState()==true){
 					greenLED.setState(true);
 					System.out.println("Correct Answer!");
 					Thread.sleep(150);
+					greenLED.setState(false);
+					redLED.setState(false);
+					break;
 				}
 			}
+        }//end of the while loop
+        System.out.println("Recursion can be used to traverse multiple objects including String, array, and ArrayList etc. (T/F)");
+        while(true){
+			boolean answer = true;
 			
-			greenLED.setState(false);
-			redLED.setState(false);
-        }*/
+            if(answer==true){
+				if(greenButton.getState()==true){
+					greenLED.setState(true);
+					System.out.println("Correct Answer!");
+					Thread.sleep(150);
+					greenLED.setState(false);
+					redLED.setState(false);
+					break;
+				}else if(redButton.getState()==true){
+					redLED.setState(true);
+					System.out.println("Incorrect Answer!");
+					Thread.sleep(150);
+					greenLED.setState(false);
+					redLED.setState(false);
+					break;
+				}
+			}
+			if(answer==false){
+				if(greenButton.getState()==true){
+					redLED.setState(true);
+					System.out.println("Incorrect Answer!");
+					Thread.sleep(150);
+					greenLED.setState(false);
+					redLED.setState(false);
+					break;
+				}else if(redButton.getState()==true){
+					greenLED.setState(true);
+					System.out.println("Correct Answer!");
+					Thread.sleep(150);
+					greenLED.setState(false);
+					redLED.setState(false);
+					break;
+				}
+			}
+        }//end of the while loop
+        System.out.println("Recursion should not be used with event-controlled processes as the result may be more function calls than the memory of the computer can handle.(T/F)");
+		while(true){
+			boolean answer = true;
+			
+            if(answer==true){
+				if(greenButton.getState()==true){
+					greenLED.setState(true);
+					System.out.println("Correct Answer!");
+					Thread.sleep(150);
+					greenLED.setState(false);
+					redLED.setState(false);
+					break;
+				}else if(redButton.getState()==true){
+					redLED.setState(true);
+					System.out.println("Incorrect Answer!");
+					Thread.sleep(150);
+					greenLED.setState(false);
+					redLED.setState(false);
+					break;
+				}
+			}
+			if(answer==false){
+				if(greenButton.getState()==true){
+					redLED.setState(true);
+					System.out.println("Incorrect Answer!");
+					Thread.sleep(150);
+					greenLED.setState(false);
+					redLED.setState(false);
+					break;
+				}else if(redButton.getState()==true){
+					greenLED.setState(true);
+					System.out.println("Correct Answer!");
+					Thread.sleep(150);
+					greenLED.setState(false);
+					redLED.setState(false);
+					break;
+				}
+			}
+        }//end of the while loop		
+		System.out.println("Iterative solutions are always better than recursive ones. (T/F)");
+		while(true){
+			boolean answer = false;
+			
+            if(answer==true){
+				if(greenButton.getState()==true){
+					greenLED.setState(true);
+					System.out.println("Correct Answer!");
+					Thread.sleep(150);
+					greenLED.setState(false);
+					redLED.setState(false);
+					break;
+				}else if(redButton.getState()==true){
+					redLED.setState(true);
+					System.out.println("Incorrect Answer!");
+					Thread.sleep(150);
+					greenLED.setState(false);
+					redLED.setState(false);
+					break;
+				}
+			}
+			if(answer==false){
+				if(greenButton.getState()==true){
+					redLED.setState(true);
+					System.out.println("Incorrect Answer!");
+					Thread.sleep(150);
+					greenLED.setState(false);
+					redLED.setState(false);
+					break;
+				}else if(redButton.getState()==true){
+					greenLED.setState(true);
+					System.out.println("Correct Answer!");
+					Thread.sleep(150);
+					greenLED.setState(false);
+					redLED.setState(false);
+					break;
+				}
+			}
+        }//end of the while loop	
+        
         
 	}
 	
-	public void displayAns(boolean answer){
+	/*public void displayAns(boolean answer){
 		boolean answer = true;
 		this.answer=answer;
 		DigitalInput redButton = new DigitalInput();
@@ -130,7 +257,7 @@ public class question {
 			greenLED.setState(false);
 			redLED.setState(false);
         }
-     }
+     }*/
 	
 	
 }
