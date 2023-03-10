@@ -1,4 +1,9 @@
-package gettingstarted;//newer version uploaded 3:08pm and this file would work with phidgets
+/**
+ * Simon He
+ * March 19 2023
+ * This is part one, he part 2 is doodle pad
+ **/
+package gettingstarted;
 
 //Add Phidgets Library | You added a file called phidget22 when configuring your project. Import gives you access to the Phidgets library code inside that file. 
 import com.phidget22.*;
@@ -42,7 +47,11 @@ public class question {
 		}
 		redLED.setState(false);
 		greenLED.setState(false);*/
+		System.out.println("Welcome to recursion question practice!");
+		System.out.println("In this game, the question will show on doodle pad. You need to read the question and decide if the statement is true or false");
+		System.out.println("the red buttom represent false and green button represent true");
 		
+		Thread.sleep(500);
 		
 		System.out.println("Every recursive method could have at least one base case which halts the recursion, the base case is to use to stop the recursion. (T/F)");
 		while(true){
@@ -83,6 +92,7 @@ public class question {
 				}
 			}
         }//end of the while loop
+        Thread.sleep(300);
         System.out.println("Recursion can be used to traverse multiple objects including String, array, and ArrayList etc. (T/F)");
         while(true){
 			boolean answer = true;
@@ -122,6 +132,7 @@ public class question {
 				}
 			}
         }//end of the while loop
+        Thread.sleep(300);
         System.out.println("Recursion should not be used with event-controlled processes as the result may be more function calls than the memory of the computer can handle.(T/F)");
 		while(true){
 			boolean answer = true;
@@ -160,7 +171,8 @@ public class question {
 					break;
 				}
 			}
-        }//end of the while loop		
+        }//end of the while loop	
+        Thread.sleep(300);	
 		System.out.println("Iterative solutions are always better than recursive ones. (T/F)");
 		while(true){
 			boolean answer = false;
